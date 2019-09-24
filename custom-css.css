@@ -1,79 +1,186 @@
 .carousel-open:checked + .carousel-item {
-    position: static;
-    opacity: 100;
+	position: static;
+	opacity: 100;
 }
 .carousel-item {
-    -webkit-transition: opacity 0.6s ease-out;
-    transition: opacity 0.6s ease-out;
+	-webkit-transition: opacity 0.6s ease-out;
+	transition: opacity 0.6s ease-out;
 }
 #carousel-1:checked ~ .control-1,
 #carousel-2:checked ~ .control-2,
 #carousel-3:checked ~ .control-3 {
-    display: block;
+	display: block;
 }
 .carousel-indicators {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    bottom: 2%;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 10;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	bottom: 2%;
+	left: 0;
+	right: 0;
+	text-align: center;
+	z-index: 10;
 }
 #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
 #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
 #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
-    color: #2b6cb0;  /*Set to match the Tailwind colour you want the active one to be */
+	color: #2b6cb0; /*Set to match the Tailwind colour you want the active one to be */
 }
-.img-slider{
-    filter:brightness(0.3);
-    z-index: 500;
+.img-slider {
+	position: relative;
+	height: 650px;
+	overflow: hidden;
 }
-.text-slider{
-    position:absolute;
-    top: 200px;
-    z-index: 1000;
-    animation: ani .7s ease-out;
-}
-
-.cowboy.fancy {
-  animation: anim1 .7s ease-out;
-}
-.chef.fancy {
-  animation: anim2 .7s ease-out;
-}
-
-@keyframes ani{
-    from{
-        opacity: 0;
-        transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
-    }
-    to{
-        opacity: 1;
-        transform: perspective(500px) translate3d(0, 0, 0);
-    }
+.img-slider:after {
+	filter: brightness(0.5);
+	background: url(https://triper.dexignlab.com/xhtml/images/main-slider/slide1.jpg);
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-@keyframes anim1 {
-  0% {
-    opacity: 0;
-    transform: translateX(-30rem) rotate(-45deg);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1) rotate(0deg);
-  }
+.image-promo {
+	position: relative;
+	height: 510px;
+	overflow: hidden;
 }
 
-@keyframes anim2 {
-  0% {
-    opacity: 0;
-    transform: translateX(30rem) rotate(45deg);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1) rotate(0deg);
-  }
+.image-promo:after {
+	filter: brightness(0.5);
+	background: url(https://triper.dexignlab.com/xhtml/images/background/bg3.jpg);
+	content: '';
+	position: absolute;
+	top: -40px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.text-promo {
+	position: absolute;
+	z-index: 1000;
+}
+
+.text-slider {
+	position: absolute;
+	top: 200px;
+	z-index: 1000;
+	-webkit-animation: fade-in-left 3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+	animation: fade-in-left 3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.search-section {
+	position: relative;
+	overflow: hidden;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.section-footer {
+	position: relative;
+	overflow: hidden;
+	z-index: 1000;
+}
+
+.section-footer div {
+	z-index: 1500;
+}
+
+.section-footer:after {
+	filter: brightness(0.2);
+	background: url(https://triper.dexignlab.com/xhtml/images/banner/bnr1.jpg);
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.footer-destination {
+	position: absolute;
+	bottom: 0px;
+	background: rgba(0, 0, 0, 0);
+	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.48) 46%, rgba(0, 0, 0, 0.68) 82%, rgba(0, 0, 0, 0.9) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(46%, rgba(0, 0, 0, 0.48)), color-stop(82%, rgba(0, 0, 0, 0.68)), color-stop(100%, rgba(0, 0, 0, 0.9)));
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.48) 46%, rgba(0, 0, 0, 0.68) 82%, rgba(0, 0, 0, 0.9) 100%);
+	background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.48) 46%, rgba(0, 0, 0, 0.68) 82%, rgba(0, 0, 0, 0.9) 100%);
+	background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.48) 46%, rgba(0, 0, 0, 0.68) 82%, rgba(0, 0, 0, 0.9) 100%);
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.48) 46%, rgba(0, 0, 0, 0.68) 82%, rgba(0, 0, 0, 0.9) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+}
+
+.search-section:after {
+	background: url(https://triper.dexignlab.com/xhtml/images/main-slider/slide2.jpg) no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+}
+.card-header img {
+	z-index: 1000;
+}
+.prices {
+	position: absolute;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	bottom: 38px;
+	left: -10px;
+	z-index: 1800;
+	text-align: center;
+	width: 125px;
+}
+
+.prices:after {
+	border-left: 10px solid rgba(0, 0, 0, 0);
+	border-right: 0 solid rgba(0, 0, 0, 0);
+	border-top: 7px solid #006e2c;
+	bottom: -7px;
+	content: '';
+	left: 0;
+	position: absolute;
+}
+
+@-webkit-keyframes fade-in-left {
+	0% {
+		-webkit-transform: translateX(-50px);
+		transform: translateX(-50px);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+@keyframes fade-in-left {
+	0% {
+		-webkit-transform: translateX(-50px);
+		transform: translateX(-50px);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+		opacity: 1;
+	}
 }

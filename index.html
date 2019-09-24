@@ -4,8 +4,9 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link href="/libs/fontawesome-free-5.11.2-web/css/all.css" rel="stylesheet" />
 		<link rel="stylesheet" href="./styles.css" />
-        <link rel="stylesheet" href="./custom-css.css" />
+		<link rel="stylesheet" href="./custom-css.css" />
 		<title>Document</title>
 	</head>
 	<body>
@@ -33,65 +34,504 @@
 				</div>
 			</div>
 		</header>
-        <section>
-            <div class="carousel relative shadow-2xl bg-white">
-                <div class="carousel-inner relative overflow-hidden w-full">
-                    <!--Slide 1-->
-                    <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
-                    <div class="carousel-item absolute opacity-0" style="height:105vh;">
-                        <div class="block h-full w-full bg-indigo-500 text-white relative">
-                            <img class="img-slider" src="https://triper.dexignlab.com/xhtml/images/main-slider/slide1.jpg" title="" />
-                            <div class="container mx-auto">
-                                <div class="text-slider">
-                                    <p class="text-5xl">Amazing Tours And Fun Adventures Qaiting For You</p>
-                                    <p class="text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and..</p>
-                                    <div class="my-6">
-                                        <a href="#" class="bg-green-600 p-4 rounded">Get A Quota</a>
-                                        <a href="#" class="text-gray-500 p-4 rounded bg-white">Talk To Us</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <label for="carousel-3" class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
-                    <label for="carousel-2" class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+		<section>
+			<div class="carousel relative shadow-2xl bg-white">
+				<div class="carousel-inner relative overflow-hidden w-full">
+					<!--Slide 1-->
+					<input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked" />
+					<div class="carousel-item absolute opacity-0">
+						<div class="block h-full w-full bg-indigo-500 text-white relative img-slider">
+							<div class="container mx-auto">
+								<div class="text-slider px-24 w-1/2">
+									<p class="text-5xl">Amazing Tours And Fun Adventures Qaiting For You</p>
+									<p class="text-sm my-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and..</p>
+									<div class="my-10">
+										<a href="#" class="mr-6 bg-green-600 px-8 py-3 rounded">Get A Quota</a>
+										<a href="#" class="text-gray-800 px-8 py-3 rounded bg-white">Talk To Us</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<label for="carousel-3" class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+					<label for="carousel-2" class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
 
-                    <!--Slide 2-->
-                    <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
-                    <div class="carousel-item absolute opacity-0" style="height:105vh;">
-                        <div class="block h-full w-full bg-orange-500 text-white text-5xl text-center">
-                            <img class="img-slider" src="https://triper.dexignlab.com/xhtml/images/main-slider/slide2.jpg" title="" />
-                        </div>
-                    </div>
-                    <label for="carousel-1" class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
-                    <label for="carousel-3" class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+					<!--Slide 2-->
+					<input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="" />
+					<div class="carousel-item absolute opacity-0">
+						<div class="block h-full w-full bg-indigo-500 text-white relative">
+							<img class="img-slider" src="https://triper.dexignlab.com/xhtml/images/main-slider/slide2.jpg" title="" />
+							<div class="container mx-auto">
+								<div class="text-slider px-8 w-1/2">
+									<p class="text-5xl">Amazing Tours And Fun Adventures Qaiting For You</p>
+									<p class="text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and..</p>
+									<div class="">
+										<a href="#" class="bg-green-600 p-4 rounded mr-6">Get A Quota</a>
+										<a href="#" class="text-gray-500 p-4 rounded bg-white">Talk To Us</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<label for="carousel-1" class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+					<label for="carousel-3" class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
 
-                    <!--Slide 3-->
-                    <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
-                    <div class="carousel-item absolute opacity-0" style="height:105vh;">
-                        <div class="block h-full w-full bg-green-500 text-white text-5xl text-center">
-                            <img class="img-slider" src="https://triper.dexignlab.com/xhtml/images/banner/bnr1.jpg" title="" />
-                        </div>
-                    </div>
-                    <label for="carousel-2" class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
-                    <label for="carousel-1" class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+					<!--Slide 3-->
+					<input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="" />
+					<div class="carousel-item absolute opacity-0">
+						<div class="block h-full w-full bg-indigo-500 text-white relative">
+							<img class="img-slider" src="https://triper.dexignlab.com/xhtml/images/banner/bnr1.jpg" title="" />
+							<div class="container mx-auto">
+								<div class="text-slider px-8 w-1/2">
+									<p class="text-5xl">Amazing Tours And Fun Adventures Qaiting For You</p>
+									<p class="text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and..</p>
+									<div class="my-6">
+										<a href="#" class="bg-green-600 p-4 rounded">Get A Quota</a>
+										<a href="#" class="text-gray-500 p-4 rounded bg-white">Talk To Us</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<label for="carousel-2" class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+					<label for="carousel-1" class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
 
-                    <!-- Add additional indicators for each slide-->
-                    <ol class="carousel-indicators">
-                        <li class="inline-block mr-3">
-                            <label for="carousel-1" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
-                        </li>
-                        <li class="inline-block mr-3">
-                            <label for="carousel-2" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
-                        </li>
-                        <li class="inline-block mr-3">
-                            <label for="carousel-3" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
-                        </li>
-                    </ol>
-                </div>
-            </div>
-        </section>
-
+					<!-- Add additional indicators for each slide-->
+					<ol class="carousel-indicators">
+						<li class="inline-block mr-3">
+							<label for="carousel-1" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+						</li>
+						<li class="inline-block mr-3">
+							<label for="carousel-2" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+						</li>
+						<li class="inline-block mr-3">
+							<label for="carousel-3" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+						</li>
+					</ol>
+				</div>
+			</div>
+		</section>
+		<section class="search-section">
+			<div class="container mx-auto flex">
+				<div class="flex flex-wrap mx-4 py-8">
+					<label for="keywords" class="text-white w-full">Keywords</label>
+					<input type="text" name="keywords" id="keywords" class="rounded px-2 py-2 w-full" />
+				</div>
+				<div class="flex flex-wrap mx-4 py-8">
+					<label for="keywords" class="text-white w-full">Keywords</label>
+					<input type="text" name="keywords" id="keywords" class="rounded px-2 py-2 w-full" />
+					<!-- 
+						<select class="rounded px-2 py-2 w-full" name="activity">
+							<option value="-1">Any</option>
+						</select> 
+					-->
+				</div>
+				<div class="flex flex-wrap mx-4 py-8">
+					<label for="keywords" class="text-white w-full">Activity</label>
+					<input type="text" name="keywords" id="keywords" class="rounded px-2 py-2 w-full" />
+					<!-- 
+						<select class="rounded px-2 py-2 w-full" name="activity">
+							<option value="-1">Any</option>
+						</select> 
+					-->
+				</div>
+				<div class="flex flex-wrap mx-4 py-8">
+					<label for="keywords" class="text-white w-full">Keywords</label>
+					<input type="text" name="keywords" id="keywords" class="rounded px-2 py-2 w-full" />
+					<!-- 
+						<select class="rounded px-2 py-2 w-full" name="activity">
+							<option value="-1">Any</option>
+						</select> 
+					-->
+				</div>
+				<div class="flex flex-wrap mx-4 py-8">
+					<label for="keywords" class="text-white w-full">Keywords</label>
+					<input type="text" name="keywords" id="keywords" class="rounded px-2 py-2 w-full" />
+				</div>
+				<div class="flex flex-wrap mx-4 py-8">
+					<label for="keywords" class="text-white w-full">Keywords</label>
+					<a href="#" class="text-white px-16 bg-green-600 rounded py-2" id="keywords" name="keywords">Search</a>
+				</div>
+			</div>
+		</section>
+		<section class="places-section">
+			<div class="container mx-auto">
+				<header class="py-16">
+					<h1 class="text-center font-bold text-3xl">TOP PLACES</h1>
+					<h3 class="text-center text-gray-500 text-xl font-medium">BEST TRAVEL PACKAGES AVAIBLE</h3>
+				</header>
+				<section class="filter-cities">
+					<div class="px-4 flex">
+						<div class="w-3/4">
+							<a href="#" class="rounded py-2 px-6 text-white bg-green-600">India</a>
+							<a href="#" class="rounded py-2 px-6 text-white bg-green-600">India</a>
+							<a href="#" class="rounded py-2 px-6 text-white bg-green-600">India</a>
+							<a href="#" class="rounded py-2 px-6 text-white bg-green-600">India</a>
+							<a href="#" class="rounded py-2 px-6 text-white bg-green-600">India</a>
+							<a href="#" class="rounded py-2 px-6 text-white bg-green-600">India</a>
+							<a href="#" class="rounded py-2 px-6 text-white bg-green-600">India</a>
+							<a href="#" class="rounded py-2 px-6 text-white bg-green-600">India</a>
+							<a href="#" class="rounded py-2 px-6 text-white bg-green-600">India</a>
+							<a href="#" class="rounded py-2 px-6 text-white bg-green-600">India</a>
+						</div>
+						<div class="w-1/4">
+							<select class="w-full rounded px-2 py-1 border border-gray-500" name="relevant">
+								<option value="-1">Relevant</option>
+							</select>
+						</div>
+					</div>
+				</section>
+				<section class="cards-cities my-6">
+					<!-- row 1 -->
+					<section class="flex flex-row">
+						<article class="w-1/3 p-4">
+							<div class="card border border-gray-300">
+								<div class="card-header relative">
+									<img src="https://triper.dexignlab.com/xhtml/images/our-work/pic1.jpg" alt="" />
+									<p class="prices text-white bg-green-600">1200 USD</p>
+								</div>
+								<div class="card-body text-center m-6">
+									<h4 class="text-gray-900 text-2xl font-bold mb-3">Japan Tokyo</h4>
+									<p class="text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum in quas ipsam, consequatur commodi laboriosam fuga exercitationem vitae molestias cum. Quia quam alias asperiores sint inventore consequuntur neque corporis quisquam?</p>
+								</div>
+								<div class="card-footer flex text-white">
+									<a href="#" class="py-3 bg-green-600 text-center font-bold w-1/2"><i class="fas fa-compass"></i> Japan</a>
+									<a href="#" class="py-3 bg-green-700 text-center font-bold w-1/2"><i class="fas fa-info-circle"></i> Relax</a>
+								</div>
+							</div>
+						</article>
+						<article class="w-1/3 p-4">
+							<div class="card border border-gray-300">
+								<div class="card-header relative">
+									<img src="https://triper.dexignlab.com/xhtml/images/our-work/pic2.jpg" alt="" />
+									<p class="prices text-white bg-green-600">1200 USD</p>
+								</div>
+								<div class="card-body text-center m-6">
+									<h4 class="text-gray-900 text-2xl font-bold mb-3">Spain Madrid</h4>
+									<p class="text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum in quas ipsam, consequatur commodi laboriosam fuga exercitationem vitae molestias cum. Quia quam alias asperiores sint inventore consequuntur neque corporis quisquam?</p>
+								</div>
+								<div class="card-footer flex text-white">
+									<a href="#" class="py-3 bg-green-600 text-center font-bold w-1/2"><i class="fas fa-compass"></i> Spain</a>
+									<a href="#" class="py-3 bg-green-700 text-center font-bold w-1/2"><i class="fas fa-info-circle"></i> Relax</a>
+								</div>
+							</div>
+						</article>
+						<article class="w-1/3 p-4">
+							<div class="card border border-gray-300">
+								<div class="card-header relative">
+									<img src="https://triper.dexignlab.com/xhtml/images/our-work/pic3.jpg" alt="" />
+									<p class="prices text-white bg-green-600">1200 USD</p>
+								</div>
+								<div class="card-body text-center m-6">
+									<h4 class="text-gray-900 text-2xl font-bold mb-3">Italy</h4>
+									<p class="text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum in quas ipsam, consequatur commodi laboriosam fuga exercitationem vitae molestias cum. Quia quam alias asperiores sint inventore consequuntur neque corporis quisquam?</p>
+								</div>
+								<div class="card-footer flex text-white">
+									<a href="#" class="py-3 bg-green-600 text-center font-bold w-1/2"><i class="fas fa-compass"></i> Italy</a>
+									<a href="#" class="py-3 bg-green-700 text-center font-bold w-1/2"><i class="fas fa-info-circle"></i> Relax</a>
+								</div>
+							</div>
+						</article>
+					</section>
+					<!-- row 2 -->
+					<section class="flex flex-row">
+						<article class="w-1/3 p-4">
+							<div class="card border border-gray-300">
+								<div class="card-header relative">
+									<img src="https://triper.dexignlab.com/xhtml/images/our-work/pic1.jpg" alt="" />
+									<p class="prices text-white bg-green-600">1200 USD</p>
+								</div>
+								<div class="card-body text-center m-6">
+									<h4 class="text-gray-900 text-2xl font-bold mb-3">Japan Tokyo</h4>
+									<p class="text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum in quas ipsam, consequatur commodi laboriosam fuga exercitationem vitae molestias cum. Quia quam alias asperiores sint inventore consequuntur neque corporis quisquam?</p>
+								</div>
+								<div class="card-footer flex text-white">
+									<a href="#" class="py-3 bg-green-600 text-center font-bold w-1/2"><i class="fas fa-compass"></i> Japan</a>
+									<a href="#" class="py-3 bg-green-700 text-center font-bold w-1/2"><i class="fas fa-info-circle"></i> Relax</a>
+								</div>
+							</div>
+						</article>
+						<article class="w-1/3 p-4">
+							<div class="card border border-gray-300">
+								<div class="card-header relative">
+									<img src="https://triper.dexignlab.com/xhtml/images/our-work/pic2.jpg" alt="" />
+									<p class="prices text-white bg-green-600">1200 USD</p>
+								</div>
+								<div class="card-body text-center m-6">
+									<h4 class="text-gray-900 text-2xl font-bold mb-3">Spain Madrid</h4>
+									<p class="text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum in quas ipsam, consequatur commodi laboriosam fuga exercitationem vitae molestias cum. Quia quam alias asperiores sint inventore consequuntur neque corporis quisquam?</p>
+								</div>
+								<div class="card-footer flex text-white">
+									<a href="#" class="py-3 bg-green-600 text-center font-bold w-1/2"><i class="fas fa-compass"></i> Spain</a>
+									<a href="#" class="py-3 bg-green-700 text-center font-bold w-1/2"><i class="fas fa-info-circle"></i> Relax</a>
+								</div>
+							</div>
+						</article>
+						<article class="w-1/3 p-4">
+							<div class="card border border-gray-300">
+								<div class="card-header relative">
+									<img src="https://triper.dexignlab.com/xhtml/images/our-work/pic3.jpg" alt="" />
+									<p class="prices text-white bg-green-600">1200 USD</p>
+								</div>
+								<div class="card-body text-center m-6">
+									<h4 class="text-gray-900 text-2xl font-bold mb-3">Italy</h4>
+									<p class="text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum in quas ipsam, consequatur commodi laboriosam fuga exercitationem vitae molestias cum. Quia quam alias asperiores sint inventore consequuntur neque corporis quisquam?</p>
+								</div>
+								<div class="card-footer flex text-white">
+									<a href="#" class="py-3 bg-green-600 text-center font-bold w-1/2"><i class="fas fa-compass"></i> Italy</a>
+									<a href="#" class="py-3 bg-green-700 text-center font-bold w-1/2"><i class="fas fa-info-circle"></i> Relax</a>
+								</div>
+							</div>
+						</article>
+					</section>
+				</section>
+			</div>
+		</section>
+		<section class="promo1-section">
+			<div class="block h-full w-full bg-indigo-500 text-white relative image-promo">
+				<div class="container mx-auto">
+					<div class="text-promo px-4 my-40 w-1/2">
+						<p class="text-2xl font-extrabold">1000 $ for person - 6 nights</p>
+						<p class="text-4xl my-6 font-extrabold">Discount <span class="text-green-500">10-30%</span> Off</p>
+						<p class="text-sm my-6">
+							If you’re looking for a truly memorable family break here you find the <br />
+							lowest price on the right hotel for you. It's indescribable. Stay up to <br />
+							date and check out the deals for these trending destinations.
+						</p>
+						<div class="my-10">
+							<a href="#" class="mr-6 bg-white px-8 py-3 rounded-full text-gray-800 font-bold">See Promotion Tours</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="popular-destination-section">
+			<div class="container mx-auto flex justify-between align-middle items-center px-4 py-16">
+				<div>
+					<h1 class="font-extrabold text-2xl">POPULAR DESTINATIONS</h1>
+					<h4 class="text-gray-600">CHOOSE YOUR NEXT DESTINATION</h4>
+				</div>
+				<div>
+					<button class="bg-green-600 text-white px-8 py-3 rounded">View All</button>
+				</div>
+			</div>
+		</section>
+		<section class="destinations-section">
+			<div class="flex flex-row">
+				<div class="image-destinations relative w-1/5">
+					<img src="https://triper.dexignlab.com/xhtml/images/gallery/destinations/pic1.jpg" alt="" class="w-full" />
+					<div class="footer-destination text-white w-full">
+						<p class="flex justify-between mx-6 my-3"><span class="font-bold text-xl">| Eiffel Tower</span> <span class="text-sm font-bold">4 hours</span></p>
+						<p class="mx-6 mb-4">View All Tours</p>
+					</div>
+				</div>
+				<div class="image-destinations relative w-1/5">
+					<img src="https://triper.dexignlab.com/xhtml/images/gallery/destinations/pic2.jpg" alt="" class="w-full" />
+					<div class="footer-destination text-white w-full">
+						<p class="flex justify-between mx-6 my-3"><span class="font-bold text-xl">| Eiffel Tower</span> <span class="text-sm font-bold">4 hours</span></p>
+						<p class="mx-6 mb-4">View All Tours</p>
+					</div>
+				</div>
+				<div class="image-destinations relative w-1/5">
+					<img src="https://triper.dexignlab.com/xhtml/images/gallery/destinations/pic3.jpg" alt="" class="w-full" />
+					<div class="footer-destination text-white w-full">
+						<p class="flex justify-between mx-6 my-3"><span class="font-bold text-xl">| Eiffel Tower</span> <span class="text-sm font-bold">4 hours</span></p>
+						<p class="mx-6 mb-4">View All Tours</p>
+					</div>
+				</div>
+				<div class="image-destinations relative w-1/5">
+					<img src="https://triper.dexignlab.com/xhtml/images/gallery/destinations/pic4.jpg" alt="" class="w-full" />
+					<div class="footer-destination text-white w-full">
+						<p class="flex justify-between mx-6 my-3"><span class="font-bold text-xl">| Eiffel Tower</span> <span class="text-sm font-bold">4 hours</span></p>
+						<p class="mx-6 mb-4">View All Tours</p>
+					</div>
+				</div>
+				<div class="image-destinations relative w-1/5">
+					<img src="https://triper.dexignlab.com/xhtml/images/gallery/destinations/pic5.jpg" alt="" class="w-full" />
+					<div class="footer-destination text-white w-full">
+						<p class="flex justify-between mx-6 my-3"><span class="font-bold text-xl">| Eiffel Tower</span> <span class="text-sm font-bold">4 hours</span></p>
+						<p class="mx-6 mb-4">View All Tours</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="packages-section">
+			<div class="container mx-auto">
+				<header class="py-16">
+					<h1 class="text-center font-bold text-3xl">PACKAGES</h1>
+					<h3 class="text-center text-gray-500 text-xl font-medium">BEST TRAVEL PACKAGES</h3>
+				</header>
+				<!-- row 1 -->
+				<section class="flex flex-row">
+					<article class="w-1/4 p-2">
+						<div class="card border border-gray-300">
+							<div class="card-header relative">
+								<img src="https://triper.dexignlab.com/xhtml/images/gallery/img4.jpg" alt="" />
+							</div>
+							<div class="card-body p-4">
+								<h4 class="text-gray-900 font-bold text-xl mb-3 text-gray-800">Weekdays in Australia</h4>
+								<p class="text-gray-700 text-gray-500">Peelamedu, Cbe, Australia</p>
+							</div>
+							<div class="card-footer border border-gray-300 p-4">
+								<div class="flex flex-row text-sm text-gray-600">
+									<span class="w-1/2"> <i class="far fa-calendar-alt"></i> No of Days: 2</span>
+									<span class="w-1/2"> <i class="fas fa-user"></i> People: 1 </span>
+								</div>
+								<div class="flex flex-row justify-between my-2">
+									<span class=""><a href="#" class="text-2xl text-green-600 text-center font-bold">$ 323</a></span>
+									<span class=""><button class="bg-green-600 py-2 text-white px-4 rounded-full text-center font-bold">View details</button></span>
+								</div>
+							</div>
+						</div>
+					</article>
+					<article class="w-1/4 p-2">
+						<div class="card border border-gray-300">
+							<div class="card-header relative">
+								<img src="https://triper.dexignlab.com/xhtml/images/gallery/img3.jpg" alt="" />
+							</div>
+							<div class="card-body p-4">
+								<h4 class="text-gray-900 font-bold text-xl mb-3 text-gray-800">Weekdays in Australia</h4>
+								<p class="text-gray-700 text-gray-500">Peelamedu, Cbe, Australia</p>
+							</div>
+							<div class="card-footer border border-gray-300 p-4">
+								<div class="flex flex-row text-sm text-gray-600">
+									<span class="w-1/2"> <i class="far fa-calendar-alt"></i> No of Days: 2</span>
+									<span class="w-1/2"> <i class="fas fa-user"></i> People: 1 </span>
+								</div>
+								<div class="flex flex-row justify-between my-2">
+									<span class=""><a href="#" class="text-2xl text-green-600 text-center font-bold">$ 323</a></span>
+									<span class=""><button class="bg-green-600 py-2 text-white px-4 rounded-full text-center font-bold">View details</button></span>
+								</div>
+							</div>
+						</div>
+					</article>
+					<article class="w-1/4 p-2">
+						<div class="card border border-gray-300">
+							<div class="card-header relative">
+								<img src="https://triper.dexignlab.com/xhtml/images/gallery/img5.jpg" alt="" />
+							</div>
+							<div class="card-body p-4">
+								<h4 class="text-gray-900 font-bold text-xl mb-3 text-gray-800">Weekdays in Australia</h4>
+								<p class="text-gray-700 text-gray-500">Peelamedu, Cbe, Australia</p>
+							</div>
+							<div class="card-footer border border-gray-300 p-4">
+								<div class="flex flex-row text-sm text-gray-600">
+									<span class="w-1/2"> <i class="far fa-calendar-alt"></i> No of Days: 2</span>
+									<span class="w-1/2"> <i class="fas fa-user"></i> People: 1 </span>
+								</div>
+								<div class="flex flex-row justify-between my-2">
+									<span class=""><a href="#" class="text-2xl text-green-600 text-center font-bold">$ 323</a></span>
+									<span class=""><button class="bg-green-600 py-2 text-white px-4 rounded-full text-center font-bold">View details</button></span>
+								</div>
+							</div>
+						</div>
+					</article>
+					<article class="w-1/4 p-2">
+						<div class="card border border-gray-300">
+							<div class="card-header relative">
+								<img src="https://triper.dexignlab.com/xhtml/images/gallery/img2.jpg" alt="" />
+							</div>
+							<div class="card-body p-4">
+								<h4 class="text-gray-900 font-bold text-xl mb-3 text-gray-800">Weekdays in Australia</h4>
+								<p class="text-gray-700 text-gray-500">Peelamedu, Cbe, Australia</p>
+							</div>
+							<div class="card-footer border border-gray-300 p-4">
+								<div class="flex flex-row text-sm text-gray-600">
+									<span class="w-1/2"> <i class="far fa-calendar-alt"></i> No of Days: 2</span>
+									<span class="w-1/2"> <i class="fas fa-user"></i> People: 1 </span>
+								</div>
+								<div class="flex flex-row justify-between my-2">
+									<span class=""><a href="#" class="text-2xl text-green-600 text-center font-bold">$ 323</a></span>
+									<span class=""><button class="bg-green-600 py-2 text-white px-4 rounded-full text-center font-bold">View details</button></span>
+								</div>
+							</div>
+						</div>
+					</article>
+				</section>
+			</div>
+		</section>
+		<section class="section-footer">
+			<div class="container mx-auto flex flex-row text-white px-2">
+				<div class="my-24 px-8 w-1/4 text-gray-300">
+					<h1 class="text-xl my-4">
+						TRAVEL
+					</h1>
+					<p class="my-4"><i class="fas fa-map-marker-alt pr-2"></i> Brodway Road 234, New York</p>
+					<p class="my-4"><i class="fas fa-phone-alt pr-2"></i> Mobile: +00 1234 456789 +10 1234 456789</p>
+					<p class="my-4"><i class="fas fa-envelope-open-text pr-2"></i> Mail: info@travel.com</p>
+					<p class="my-4"><i class="fas fa-fax pr-2"></i> Fax: 000 123 2294 089</p>
+					<div class="flex flex-row mt-12">
+						<button class="rounded bg-blue-800 w-12 h-12 mx-1"></button>
+						<button class="rounded bg-red-500 w-12 h-12 mx-1"></button>
+						<button class="rounded bg-blue-600 w-12 h-12 mx-1"></button>
+						<button class="rounded bg-blue-300 w-12 h-12 mx-1"></button>
+					</div>
+				</div>
+				<div class="my-24 px-4 w-1/4 text-gray-300">
+					<h1 class="text-xl my-4">
+						TAG
+					</h1>
+					<div class="">
+						<button class="bg-gray-700 px-3 py-2 text-center text-sm text-gray-200 mr-1 mt-1">Design</button>
+						<button class="bg-gray-700 px-3 py-2 text-center text-sm text-gray-200 mr-1 mt-1">User interface</button>
+						<button class="bg-gray-700 px-3 py-2 text-center text-sm text-gray-200 mr-1 mt-1">SEO</button>
+						<button class="bg-gray-700 px-3 py-2 text-center text-sm text-gray-200 mr-1 mt-1">WordPress</button>
+						<button class="bg-gray-700 px-3 py-2 text-center text-sm text-gray-200 mr-1 mt-1">Development</button>
+						<button class="bg-gray-700 px-3 py-2 text-center text-sm text-gray-200 mr-1 mt-1">Jommla</button>
+						<button class="bg-gray-700 px-3 py-2 text-center text-sm text-gray-200 mr-1 mt-1">Design</button>
+						<button class="bg-gray-700 px-3 py-2 text-center text-sm text-gray-200 mr-1 mt-1">User interface</button>
+						<button class="bg-gray-700 px-3 py-2 text-center text-sm text-gray-200 mr-1 mt-1">SEO</button>
+						<button class="bg-gray-700 px-3 py-2 text-center text-sm text-gray-200 mr-1 mt-1">WordPress</button>
+						<button class="bg-gray-700 px-3 py-2 text-center text-sm text-gray-200 mr-1 mt-1">Development</button>
+						<button class="bg-gray-700 px-3 py-2 text-center text-sm text-gray-200 mr-1 mt-1">Jommla</button>
+						<button class="bg-gray-700 px-3 py-2 text-center text-sm text-gray-200 mr-1 mt-1">Design</button>
+						<button class="bg-gray-700 px-3 py-2 text-center text-sm text-gray-200 mr-1 mt-1">User interface</button>
+						<button class="bg-gray-700 px-3 py-2 text-center text-sm text-gray-200 mr-1 mt-1">SEO</button>
+					</div>
+				</div>
+				<div class="my-24 px-4 w-1/4 text-gray-300">
+					<h1 class="text-xl my-4">
+						CONTACT US
+					</h1>
+					<div class="">
+						<input type="text" class="py-2 px-4 bg-gray-800 text-gray-200 my-2 w-full" placeholder="Your Name" />
+						<input type="text" class="py-2 px-4 bg-gray-800 text-gray-200 my-2 w-full" placeholder="Your Email Address" />
+						<textarea type="text" class="py-2 px-4 bg-gray-800 text-gray-200 my-2 w-full" rows="5" placeholder="Your Messages..."></textarea>
+						<button class="bg-green-500 text-center font-bold px-6 py-2 rounded">Submit</button>
+					</div>
+				</div>
+				<div class="my-24 px-8 w-1/4 text-gray-300">
+					<h1 class="text-xl my-4">
+						GALLERY
+					</h1>
+					<div class="flex flex-row">
+						<img src="https://triper.dexignlab.com/xhtml/images/gallery/img2.jpg" class="rounded bg-blue-800 w-20 h-20 m-1" />
+						<img src="https://triper.dexignlab.com/xhtml/images/gallery/img2.jpg" class="rounded bg-blue-800 w-20 h-20 m-1" />
+						<img src="https://triper.dexignlab.com/xhtml/images/gallery/img2.jpg" class="rounded bg-blue-800 w-20 h-20 m-1" />
+					</div>
+					<div class="flex flex-row">
+						<img src="https://triper.dexignlab.com/xhtml/images/gallery/img2.jpg" class="rounded bg-blue-800 w-20 h-20 m-1" />
+						<img src="https://triper.dexignlab.com/xhtml/images/gallery/img2.jpg" class="rounded bg-blue-800 w-20 h-20 m-1" />
+						<img src="https://triper.dexignlab.com/xhtml/images/gallery/img2.jpg" class="rounded bg-blue-800 w-20 h-20 m-1" />
+					</div>
+					<div class="flex flex-row">
+						<img src="https://triper.dexignlab.com/xhtml/images/gallery/img2.jpg" class="rounded bg-blue-800 w-20 h-20 m-1" />
+						<img src="https://triper.dexignlab.com/xhtml/images/gallery/img2.jpg" class="rounded bg-blue-800 w-20 h-20 m-1" />
+						<img src="https://triper.dexignlab.com/xhtml/images/gallery/img2.jpg" class="rounded bg-blue-800 w-20 h-20 m-1" />
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="bg-black py-6">
+			<div class="container mx-auto flex justify-between px-2 text-gray-400">
+				<div class="text-sm">
+					Copyright © 2018 Dexignlabs
+				</div>
+				<div class="text-sm">
+					Design With By Dexignlabs and clone by gusadolfo123@hotmail.com
+				</div>
+			</div>
+		</footer>
 	</body>
 	<script src="./app.js"></script>
 </html>
