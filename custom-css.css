@@ -66,6 +66,27 @@
 	background-size: cover;
 }
 
+.image-promo-about {
+	position: relative;
+	height: 500px;
+	overflow: hidden;
+}
+
+.image-promo-about:after {
+	filter: brightness(0.5);
+	background: url(https://triper.dexignlab.com/xhtml/images/background/bg1.jpg);
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 .text-promo {
 	position: absolute;
 	z-index: 1000;
