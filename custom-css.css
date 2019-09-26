@@ -109,6 +109,31 @@
 	background-size: cover;
 }
 
+.image-header-about {
+	position: relative;
+	z-index: 1000;
+	height: 300px;
+	overflow: hidden;
+}
+
+.image-header-about div {
+	z-index: 1500;
+}
+
+.image-header-about:after {
+	filter: brightness(0.5);
+	background: url(https://triper.dexignlab.com/xhtml/images/banner/bnr1.jpg);
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 .footer-destination {
 	position: absolute;
 	bottom: 0px;
